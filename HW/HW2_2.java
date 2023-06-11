@@ -7,7 +7,7 @@ public class HW2_2 {
         int i = 0;
         boolean b = true;
         while (i < N.length) {
-            if (i == N.length - 1) {
+            if (i == N.length -1) {
                 break;
             }
             if (N[i] > N[i + 1]) {
