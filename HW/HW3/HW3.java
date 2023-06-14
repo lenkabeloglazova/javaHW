@@ -18,11 +18,11 @@ public class HW3 {
             int maxPrice = 0;
             
             if (name.contains("высший") && (sort.equals("1-й сорт") || sort.equals("2-й сорт"))) {
-                    
-            price = maxPrice;{
-            maxPrice = price;
+               
+             if (price > maxPrice);
+             maxPrice = price;
               
-            }
+            
         }
         
         
