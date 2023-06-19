@@ -1,21 +1,25 @@
-package HW;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
-//Дана последовательность целых чисел, оканчивающаяся нулем. Найти сумму положительных чисел, после которых следует отрицательное число.
-//        Пример ввода:
-//        1 2 1 2 -1 1 3 1 3 -1 0
+
 public class HW1 {
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-    int []array = {1,2,1,2,-1,1,3,1,3,-1,0};
-        System.out.print(summ(array));
+       
+        List<Integer> ourDeque = new LinkedList<>();
+            for (Integer i = 1; i <=5; i++ ){
+                ourDeque.add(i);
+            }
+
+        System.out.println(ourDeque);
+        ourDeque.sort(Comparator.reverseOrder());
+         System.out.println(ourDeque);
+
+
     }
-    static int summ(int []nums)
-    {
-        int result = 0;
-        for (int i = 0; i < nums.length; i++)
-        {
-            if(nums[i] < 0)
-                result = result + nums[i-1];
-        }
-        return result;
-    }
+    
 }
